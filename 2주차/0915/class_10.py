@@ -38,4 +38,4 @@ class NumberGuessingGame:
             self.get_user_guess()
             if self.check_guess():
                 break
-NumberGuessingGame().play() # 게임 시작1
+NumberGuessingGame().play() # 게임 시작
