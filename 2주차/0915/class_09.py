@@ -30,6 +30,15 @@ class RSPGame:
         def get_com_choice(self):
             self.com_choice = random.randint(1, 3)
         def determine_winner(self):
-             if self.user_choice == self.com_choice:
-                    self.result= "무승부"
-                elif (self.user_choice == 1 and self.com_choice == 3) or \
+            if self.user_choice == self.com_choice:
+                self.result = "무승부"
+            elif (self.user_choice == 1 and self.com_choice == 3) or \
+                 (self.user_choice == 2 and self.com_choice == 1) or \
+                 (self.user_choice == 3 and self.com_choice == 2):
+                self.result = "승리"
+            else:
+                self.result = "패배"
+        def play(self):
+            self.get_com_choice()
+            self.determine_winner()
+
