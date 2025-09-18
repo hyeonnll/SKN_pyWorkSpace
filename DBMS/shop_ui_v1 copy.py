@@ -78,6 +78,6 @@ with right_col:
                     st.success("신규 회원 추가 완료")
                     st.experimental_rerun()
         with col_b:
-            if st.button("입력 초기화"):
+            if st.button("입력 초기화1"):
                 st.session_state.selected_member_index = None
                 st.experimental_rerun()
